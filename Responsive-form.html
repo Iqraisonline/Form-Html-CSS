@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Responsive-Form</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .wrapper {
+                width: 100%;
+                border: none;
+                border-radius: 5px;
+                background-color: lightgrey;
+                padding: 5px;
+            }
+            .col-left {
+                width: 25%;
+                float: left;
+            }
+            .col-right {
+                width: 75%;
+                float: left;
+                margin-top: 5px;
+            }
+            .clearfix {
+                clear: both;
+            }
+
+            input[type=submit], input[type=reset] {
+                background-color: lightseagreen;
+                color: white;
+                border: none;
+                padding: 15px;
+                margin: 10px 30px;
+                border-radius: 5px;
+            }
+
+            input[type=reset]:hover {
+                border: 2px solid black;
+                background-color: rgb(109, 103, 103);
+            }
+            input[type=submit]:hover {
+                border: 2px solid black;
+                background-color: rgb(109, 103, 103);
+            }
+
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 8px;
+            }
+            label {
+                padding: 10px 10px 10px 0;
+                display: inline-block;
+            }
+
+            @media screen and (max-width: 700px) {
+                .col-left , .col-right {
+                    width: 100%;
+                }
+                
+            }
+
+
+
+
+        </style>
+        </head>
+        <body>
+            <h2>Responsive Form</h2>
+            <br>
+            <div class="wrapper">
+                <form>
+                    <div class="row">
+                        <div class="col-left">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-right">
+                            <input type="text" name="" id="fname" placeholder="Type your First name">
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row">
+                    <div class="col-left">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-right">
+                        <input type="text" name="" id="lname" placeholder="Type your Last name">
+                    </div>
+                </div>
+
+
+
+                    <div class="row">
+                    <div class="col-left">
+                        <label for="cntry">Country</label>
+                    </div>
+                    <div class="col-right">
+                        <select id="cntry">
+                        <option value="Ger">Germany</option>
+                        <option value="Pak" selected>Pakistan</option>
+                        <option value="Swit">Switzerland</option>
+                        <option value="Sau">Saudi Arabia</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+
+                    <div class="row">
+                    <div class="col-left">
+                        <label for="sbj">Subject</label>
+                    </div>
+                    <div class="col-right">
+                        <textarea name="" id="sbj" cols="30" rows="10" placeholder="Write Something...."></textarea>
+                    </div>
+                </div>
+
+                    <div class="row">
+                        <input type="submit" value="Submit Now">
+                        <input type="reset" value="Reset">
+                    </div>
+                    
+                </form> 
+
+
+                <div class="clearfix"></div>
+            </div>
+
+
+        </body>
+        </html>
